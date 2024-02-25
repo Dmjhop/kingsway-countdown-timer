@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+
+#serviceTitle {
+  color: aliceblue;
+}
+
+.container {
+  display: flex;
+  background-color: bisque;
+  gap: 10%;
+  justify-content: center;
+}
+
+.block-bg {
+  width: 8.5625rem;
+  height: 7.8125rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  background: #d9d9d9;
+}

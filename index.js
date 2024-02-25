@@ -66,8 +66,14 @@ async function serviceData() {
     const seconds = Math.floor((difference % (1000 * 60)) / 1000)
 
     // Display the results in the element with id="countdown"
-    document.getElementById("countdown").innerHTML =
-      days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+    document.getElementById("countdown").innerHTML = `
+    <div class="container large-bg">
+    <div class="block-bg">${days}</div>
+    <div class="block-bg">${hours}</div>
+    <div class="block-bg">${minutes}</div>
+    <div class="block-bg">${seconds}</div>
+    </div>
+    `
 
     // If we are past the end time, clear the countdown
     if (difference < 0) {
